@@ -1,0 +1,35 @@
+<script>
+	confirm("Welcome to Half Life 3")
+	confirm("Nvidia Driver 314.22 has stopped working, please enjoy the text-only version of the game.")
+	var check = 1
+	var turn = 0
+	while (check == 1){
+		var action = prompt("You find yourself in the middle of a small closet with no memory of how you got there. The door is ajar. Enter 'w' to move forward or 's' to move backward")
+		if (action == 'w'){
+			confirm("You step forward into the darkened hallway, only to hear a scuttling creature rushing toward you.")
+			check = 0
+			turn = turn + 1
+		}
+		else if (action == 's'){
+			confirm("You step backwards into a wall. That wasn't very productive.")
+			turn = turn + 1
+		}
+		else{
+			confirm("Not a valid command!")
+		}
+	}
+	var action = prompt("An insectoid like creature jumps toward you! Enter '1' to punch or '2' to kick.")
+	if (action == '1'){
+		confirm("The alien devours your arm up to your shoulder and leaps away. Game over!")
+		turn = turn + 1
+	}
+	else if (action == '2'){
+		confirm("You kick the alien into a wall and it explodes into goo. Please purchase the DLC to continue your adventure.")
+		turn = turn + 1
+	}
+	else{
+		confirm("HL3.exe has stopped working")
+	}
+	confirm("Your game ended after " + turn + " turns")
+
+</script>

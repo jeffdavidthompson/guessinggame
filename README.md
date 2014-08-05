@@ -1,0 +1,1 @@
+This is a 'choose your own adventure' type text only game where you navigate a small room and attempt to kill an alien to win. The game checks the user's inputs to see if they are valid, and counts the number of attempts or "turns".
