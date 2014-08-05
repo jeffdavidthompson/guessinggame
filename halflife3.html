@@ -1,8 +1,10 @@
 <script>
+//decare vars and show the welcome message
 	confirm("Welcome to Half Life 3")
 	confirm("Nvidia Driver 314.22 has stopped working, please enjoy the text-only version of the game.")
 	var check = 1
 	var turn = 0
+	//while loop prevents the game from continuing until a certain input, turn not tracked on an invalid command
 	while (check == 1){
 		var action = prompt("You find yourself in the middle of a small closet with no memory of how you got there. The door is ajar. Enter 'w' to move forward or 's' to move backward")
 		if (action == 'w'){
@@ -18,6 +20,7 @@
 			confirm("Not a valid command!")
 		}
 	}
+	//no while loop needed here because the game ends, turn not tracked on the final else
 	var action = prompt("An insectoid like creature jumps toward you! Enter '1' to punch or '2' to kick.")
 	if (action == '1'){
 		confirm("The alien devours your arm up to your shoulder and leaps away. Game over!")
