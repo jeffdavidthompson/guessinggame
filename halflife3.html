@@ -11,8 +11,9 @@
 		moveOn = false
 		while(moveOn === false){
 			var userChoice = prompt(stringArray[0])
+			//uses indexOf to line up the textArray with the keyArray
 			if(isInArray(userChoice.toLowerCase(),passKeys) === true) {
-				alert(stringArray[1])
+				alert(stringArray[passKeys.indexOf(userChoice) + 1])
 				turn++
 				moveOn = true
 			}
